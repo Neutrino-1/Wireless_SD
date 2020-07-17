@@ -27,8 +27,8 @@ void setup(void){
   WiFi.softAPConfig(apIP, gateway, subnet);
   WiFi.softAP(ssid, password);
 
-  //4 indicates the Chip select pin
-  if (SD.begin(4)) {
+  //2 indicates the Chip select pin
+  if (SD.begin(2)) {
       Serial.println("SD opened!");
       ftpSrv.begin("esp8266","esp8266");    //username, password for ftp.  set ports in ESP8266FtpServer.h  (default 21, 50009 for PASV)
   }   

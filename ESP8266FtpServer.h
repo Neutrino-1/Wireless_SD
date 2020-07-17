@@ -1,11 +1,10 @@
-
 /*
 *  FTP SERVER FOR ESP8266
  * based on FTP Serveur for Arduino Due and Ethernet shield (W5100) or WIZ820io (W5200)
  * based on Jean-Michel Gallego's work
  * modified to work with esp8266 SPIFFS by David Paiva (david@nailbuster.com)
  * modified to work with esp8266 SD by "https://trionking.blogspot.com/2017/02/esp8266-wifi-ftp-server-with-sd.html"
- * modified to work with esp8266 SD without modifying SD library by Srinivasan Github.com/Neutrino-1
+ * modified to work with esp8266 SD without modifying SD library by Srinivasan https://Github.com/Neutrino-1 
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -89,7 +88,8 @@ private:
   boolean  rnfrCmd;                   // previous command was RNFR
   char *   parameters;                // point to begin of parameters sent by client
   uint16_t iCL;                       // pointer to cmdLine next incoming char
-  int8_t   cmdStatus,                 // status of ftp command connexion
+  int8_t   SD_Status,
+           cmdStatus,                 // status of ftp command connexion
            transferStatus;            // status of ftp data transfer
   uint32_t millisTimeOut,             // disconnect after 5 min of inactivity
            millisDelay,

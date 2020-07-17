@@ -4,7 +4,7 @@
  * based on Jean-Michel Gallego's work
  * modified to work with esp8266 SPIFFS by David Paiva david@nailbuster.com
  * modified to work with esp8266 SD by "https://trionking.blogspot.com/2017/02/esp8266-wifi-ftp-server-with-sd.html"
- * modified to work with esp8266 SD without modifying SD library by Srinivasan Github.com/Neutrino-1 
+ * modified to work with esp8266 SD without modifying SD library by Srinivasan https://Github.com/Neutrino-1 
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,7 +25,7 @@
 #include <FS.h>
 #include <SD.h>
 
-#define FTP_DEBUG 1
+//#define FTP_DEBUG 1 //uncomment to turn on DEBUG mode
 WiFiServer ftpServer( FTP_CTRL_PORT );
 WiFiServer dataServer( FTP_DATA_PORT_PASV );
 

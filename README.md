@@ -13,8 +13,27 @@ all the other files will open along with it.
 
 ### Prerequisites
 
-* [Espcore](https://github.com/esp8266/Arduino) - by EspCore
+* [ESP-Core](https://github.com/esp8266/Arduino) - by Ivan Grokhotkov
+
+### Usage
+
+Once the device is powered up follow the below steps to transfer data from SD card:
+```
+-> Connect to the acess point named "SD Reader" with the password "ASDF@123".
+
+-> download any FTP client application (Android - AndFTP, Windows - WinScp).
+
+-> Host name "192.168.12.7" Port "21".
+
+-> Enter the user name and password as "esp8266".
+
+-> Connect to the server
+```
 
 ## License
 
-This project is licensed under the GNU License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU License - see the [LICENSE.md](https://github.com/Neutrino-1/Wireless_SD/blob/master/LICENSE) file for details
+
+## Acknowledgments
+
+* [David Paiva](https://github.com/nailbuster) Ported Arduino FTP server to esp8266/esp32.

@@ -37,3 +37,7 @@ This project is licensed under the GNU License - see the [LICENSE.md](https://gi
 ## Acknowledgments
 
 * [David Paiva](https://github.com/nailbuster) Ported Arduino FTP server to esp8266/esp32.
+
+## Support
+
+<a href="https://www.buymeacoffee.com/Neutrino"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=Neutrino&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"></a>
